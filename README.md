@@ -85,15 +85,15 @@ Project Apex was the third RL approach attempted. Both earlier attempts are docu
 
 ## Trained Model Weights
 
-Trained model checkpoints (~1.2 GB of `.torch` files under `Code/linesight/save/`) are **not stored in this repository** to keep the repo size manageable.
+Trained model checkpoints (~1.2 GB of `.torch` files) are **not stored in this repository** to keep the repo size manageable.
 
 To use a pre-trained model, choose one of:
 
 - **Download from Google Drive:** [https://drive.google.com/drive/folders/1ad6HIPwomb4y6Zn\_nF2eptqvb9F4lq4\_?usp=sharing](https://drive.google.com/drive/folders/1ad6HIPwomb4y6Zn_nF2eptqvb9F4lq4_?usp=sharing)
   Place the downloaded `save/` folder at `Code/linesight/save/`.
-- **Retrain from scratch** by following [Code/docs/QUICKSTART.md](Code/docs/QUICKSTART.md) — expect roughly 4–24 hours per track on a modern NVIDIA GPU
+- **Retrain from scratch** expect roughly 4–24 hours per track on a modern NVIDIA GPU
 
-The recorded TensorBoard event files under `Code/linesight/tensorboard/` and the best-lap replays under `Code/results/` ARE in the repository, so the training history and end results are inspectable without the weights themselves.
+The recorded TensorBoard event files and the best-lap replays  so the training history and end results are inspectable without the weights themselves.
 
 ## Note on Git LFS
 
