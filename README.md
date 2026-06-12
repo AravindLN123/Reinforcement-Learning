@@ -87,59 +87,6 @@ Project Apex was the third RL approach attempted. Both earlier attempts are docu
 2. **Project Apex Control Dashboard** — Streamlit web app for non-technical users (start/stop training, live hyperparameter tuning, weight snapshots, replay playback)
 3. **Playground for future students** — the project is intentionally positioned as a re-usable platform; concrete extension ideas (frame stacking, saliency analysis, transformer-based vision, multi-track generalisation, and more) are catalogued in the Next Steps section of the Conclusion
 
-## Repository Structure
-
-```text
-01-Reinforcement/
-|-- README.md                          # this file (living document)
-|-- .gitattributes                     # Git LFS rules (future-proofing for large binaries)
-|-- .gitignore                         # LaTeX auxiliary file exclusions
-|-- author.xlsx                        # Author / project metadata
-|
-|-- Code/                              # Project Apex software (see Code/README.md for details)
-|   |-- .gitignore                     # excludes trained-weight artifacts, caches, venvs
-|   |-- README.md                      # software-specific overview
-|   |-- dashboard.py                   # Project Apex Control Dashboard (Streamlit)
-|   |-- playback_best_run.py
-|   |-- verify_tminterface.py
-|   |-- requirements-dashboard.txt
-|   |-- docs/                          # all user-facing guides
-|   |   |-- INSTALL.md                 # detailed environment setup
-|   |   |-- QUICKSTART.md              # day-by-day workflow
-|   |   |-- LINESIGHT_EXPLAINED.md     # deep technical reference for the IQN agent
-|   |   |-- DASHBOARD.md               # Project Apex Control Dashboard guide
-|   |   |-- CODE_GUIDE.md              # full code file reference and task-based navigation
-|   |   `-- ADD_NEW_TRACK.md           # adding a new Trackmania track
-|   |-- tools/                         # figure / metrics export scripts (output → report/Images/)
-|   |-- maps/                          # TMNF map files (.Gbx) + reference centerlines (.npy)
-|   |-- results/                       # best-known recorded replays (.Replay.Gbx)
-|   `-- linesight/                     # flattened Linesight framework source + docs + tensorboard logs
-|
-|-- report/                            # LaTeX thesis report
-|   |-- Contents/General/              # chapter content (LaTeX source)
-|   |-- General/                       # shared LaTeX configuration and assets (template — do not modify)
-|   |-- Images/                        # all project figures (tracks, training curves, methods, dashboard, appendix)
-|   |-- System/EdgeComputer/           # main LaTeX entry point and compiled PDF
-|   `-- tikz/                          # TikZ components
-|
-|-- MLbib/                             # bibliography sources (BibTeX)
-|
-|-- Manual/                            # (scaffold) hardware/user manual placeholder
-|-- Poster/                            # (scaffold) academic poster
-|-- Presentations/                     # (scaffold) presentation templates
-`-- ProjectManagement/                 # (scaffold) project-management documents
-```
-
-## Setup and Quick Start
-
-For installing and running the Project Apex software, follow the documentation under [Code/](Code/):
-
-1. **Navigate the codebase** — see [Code/docs/CODE_GUIDE.md](Code/docs/CODE_GUIDE.md) for a full file-by-file reference with quick-lookup table and task-based navigation
-2. **Install dependencies** — see [Code/docs/INSTALL.md](Code/docs/INSTALL.md) (Python 3.11, PyTorch + CUDA, TMNF, TMInterface 2.1.0, TMLoader, the Linesight framework dependencies, Streamlit for the dashboard)
-3. **Run the day-to-day workflow** — see [Code/docs/QUICKSTART.md](Code/docs/QUICKSTART.md)
-4. **Drive the project from a browser** — see [Code/docs/DASHBOARD.md](Code/docs/DASHBOARD.md) for the Project Apex Control Dashboard
-5. **Add a new track** — see [Code/docs/ADD_NEW_TRACK.md](Code/docs/ADD_NEW_TRACK.md)
-
 ## Trained Model Weights
 
 Trained model checkpoints (~1.2 GB of `.torch` files under `Code/linesight/save/`) are **not stored in this repository** to keep the repo size manageable.
