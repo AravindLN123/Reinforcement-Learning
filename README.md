@@ -1,7 +1,7 @@
 Project Apex
 
 <p align="center">
-  <img src="Code/assets/ProjectApex_Logo_Big.png" alt="Project Apex Logo" width="1000"/>
+  <img src="https://github.com/AravindLN123/Reinforcement-Learning/blob/main/ProjectApex_Logo_Big.png" alt="Project Apex Logo" width="1000"/>
 </p>
 
 ## Project Overview
