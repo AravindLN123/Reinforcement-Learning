@@ -10,42 +10,12 @@
 
 | What you want to do | Read |
 |---|---|
-| Install TMNF, TMInterface, Python, and all dependencies | [docs/INSTALL.md](docs/INSTALL.md) |
-| Day-by-day training workflow | [docs/QUICKSTART.md](docs/QUICKSTART.md) |
-| Drive training from a browser (start/stop, live hyperparameter tuning, snapshots, replay) | [docs/DASHBOARD.md](docs/DASHBOARD.md) |
-| Teach the agent a new track | [docs/ADD_NEW_TRACK.md](docs/ADD_NEW_TRACK.md) |
-| Understand the IQN agent internals | [linesight/README.md](linesight/README.md) |
+| Install TMNF, TMInterface, Python, and all dependencies 
+| Day-by-day training workflow
+| Drive training from a browser (start/stop, live hyperparameter tuning, snapshots, replay)
+| Teach the agent a new track 
+| Understand the IQN agent internals 
 
-## Folder map
-
-```
-Code/
-├── README.md                      <- you are here
-├── dashboard.py                   <- Project Apex Control Dashboard (Streamlit)
-├── playback_best_run.py           <- replay any recorded lap inside TMNF
-├── verify_tminterface.py          <- sanity-check that TMInterface is running
-├── requirements-dashboard.txt     <- pip deps for the dashboard only
-│
-├── docs/
-│   ├── INSTALL.md                 <- full environment setup
-│   ├── QUICKSTART.md              <- day-by-day workflow cheat sheet
-│   ├── DASHBOARD.md               <- Control Dashboard user guide
-│   ├── ADD_NEW_TRACK.md           <- adding a new Trackmania track
-│   ├── CODE_GUIDE.md              <- full file reference + task-based navigation
-│   └── LINESIGHT_EXPLAINED.md     <- deep technical reference for the IQN agent
-│
-├── linesight/                     <- Linesight framework (Linesight-RL team, flattened copy)
-│   ├── config_files/              <- config.py, user_config.py, state normalization
-│   ├── scripts/                   <- train.py and launch shell scripts
-│   ├── trackmania_rl/             <- IQN agent core (18 Python files)
-│   ├── maps/                      <- reference trajectory .npy files
-│   ├── tensorboard/               <- training event logs (inspectable without weights)
-│   └── save/                      <- trained model weights (NOT in repo -- see below)
-│
-├── maps/                          <- TMNF map files (.Gbx) + reference centerlines (.npy)
-├── results/                       <- best-lap replays (.Replay.Gbx)
-└── tools/                         <- figure and metrics export scripts
-```
 
 ## Trained Model Weights
 
