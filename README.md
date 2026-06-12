@@ -10,10 +10,6 @@ Project Apex
 
 The project arrived at this approach after iterating through two earlier directions (F1Tenth with Proximal Policy Optimization, then TMRL with Soft Actor-Critic on Trackmania 2020). Project Apex on the Linesight framework is the chosen final approach; the earlier attempts are documented in the Appendix of the report as part of the iterative exploration narrative.
 
-## Repository
-
-GitHub repository: [Wings-hub/BA26-Project-B](https://github.com/Wings-hub/BA26-Project-B.git)
-
 ## Core Idea
 
 - **Framework:** Linesight by the Linesight-RL team (used as the underlying agent stack, credited in the report and in code comments)
