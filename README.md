@@ -1,4 +1,4 @@
-# BA26 Project B | Project Apex
+Project Apex
 
 <p align="center">
   <img src="Code/assets/ProjectApex_Logo_Big.png" alt="Project Apex Logo" width="1000"/>
